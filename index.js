@@ -51,7 +51,7 @@ function closures(str) {
 
 function increment() {
     let sum = 0;
-    function incrementValue(num) {
+    return function incrementValue(num) {
         sum+=num;
         console.log(sum);
     }
@@ -75,8 +75,8 @@ function incrementBy() {
     }
 };
 
-let incrementor2 = incrementBy();
-incrementor2.addValue(5);
-incrementor2.addValue(2);
-incrementor2.addValue(-10);
+// let incrementor2 = incrementBy();
+// incrementor2.addValue(5);
+// incrementor2.addValue(2);
+// incrementor2.addValue(-10);
 
